@@ -7,9 +7,7 @@ from setuptools import setup, find_namespace_packages
 from setuptools.command.build_py import build_py
 
 # TODO: find from extras maybe
-HOST_MLIR_PYTHON_PACKAGE_PREFIX = os.environ.get(
-    "HOST_MLIR_PYTHON_PACKAGE_PREFIX", "mlir"
-)
+HOST_MLIR_PYTHON_PACKAGE_PREFIX = "circt"
 PACKAGE_NAME = f"{HOST_MLIR_PYTHON_PACKAGE_PREFIX.replace('.', '-').replace('_', '-')}-python-extras"
 
 
